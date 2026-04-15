@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling</title>
+    <link rel="stylesheet" href ="../css/myStyles.css">
+</head>
+<body>
+<div id="top-anchor"></div>
+    <div id="top"></div>
+
+    <nav>
+        <a href="../index.html">Back to Professional Site</a>
+    </nav>
+
+    <header>
+        <h1>My Love for Traveling</h1>
+        <p>Here are my top locations I have traveled to in 2026</p>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="section-box">
+            <h2>Why Travel?</h2>
+            <p>Life is about collecting memories, not things. I truly believe that we are here to experience, learn, and grow. I won't achieve this by staying home, outside is where I belong. </p>
+            
+            <h3>2026 Travels</h3>
+            <ol>
+                <li>California
+                    <ul>
+                        <li>San Diego 
+                            - here I learned the power of human connections</li>
+                        <li>Disneyland 
+                            - here I learned the beauty of dreaming big</li>
+                    </ul>
+                    <br>
+                </li>
+                <li>Austin, TX 
+                    - here I learned the importance of celebrating life</li>
+                <br>
+                <li>Little Sahara, UT 
+                    - here I learned that life is meant for adventure</li>
+            </ol>
+            
+            <img src="../assets/img/triptoausting.jpg" alt="San Diego" class="main-img">
+        </div>
+
+       <div class="content-wrapper">
+        <div class="section-box">
+    <div class="content-block">
+    <h2>Travel Analytics</h2>
+    <p>A deeper look at global travel trends and destination data.</p>
+    
+    <div class='tableauPlaceholder' id='viz1776226844982' style='position: relative; margin: 0 auto; border-radius: 8px; overflow: hidden;'>
+        <noscript>
+            <a href='#'>
+                <img alt='Travel Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;Travel-Dashboard-Daminda-new&#47;TravelDashboard&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='Travel-Dashboard-Daminda-new&#47;TravelDashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tr&#47;Travel-Dashboard-Daminda-new&#47;TravelDashboard&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1776226844982');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        
+        // FIX: Changed '1000px' to '100%' so it stays inside your white box
+        // and lowered the height to 700px to make it "smaller"
+        if ( divElement.offsetWidth > 500 ) { 
+            vizElement.style.width='100%'; 
+            vizElement.style.height='700px'; 
+        } else { 
+            vizElement.style.width='100%'; 
+            vizElement.style.height='1500px'; 
+        }
+        
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    </div>
+    </div>
+   
+    </p>
+</div>
+ <div class="content-wrapper">
+        <div class="section-box">
+    <div class="content-block">
+    <h2>The Spirit of Adventure</h2>
+    <p>Watch this short film to see why exploring new horizons is so vital to the human experience.</p>
+    
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin-top: 20px;">
+        <iframe 
+            src="https://www.youtube.com/embed/cRkFYSlTPnE?si=4k4cBaqbnrj85yfk" 
+            title="YouTube video player" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+<div class="content-block" style="text-align: center;">
+    <h2 style="color: #330d4d; font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;">✈️ Where to Next?</h2>
+    <p style="font-family: 'Helvetica Neue', Arial, sans-serif; color: #333;">Can't decide on your next adventure? Let the travel gods decide!</p>
+    
+    <div id="display-box" style="min-height: 120px; display: flex; align-items: center; justify-content: center; flex-direction: column; margin: 20px 0;">
+        <h3 id="destination-output" style="margin-bottom: 5px; color: #694181; font-family: 'Helvetica Neue', Arial, sans-serif;">Click the button below...</h3>
+        <p id="fortune-output" style="font-style: italic; color: #666; font-family: 'Helvetica Neue', Arial, sans-serif;"></p>
+    </div>
+
+    <button onclick="generateDestination()" class="back-link" style="border: none; cursor: pointer; display: inline-block;">
+        Spin the Globe 🌎
+    </button>
+
+    <script>
+        function generateDestination() {
+            const trips = [
+                { place: "Tokyo, Japan", fortune: "Pack your walking shoes and prepare for the best sushi of your life." },
+                { place: "Reykjavik, Iceland", fortune: "The Northern Lights are calling. Don't forget a heavy coat!" },
+                { place: "Machu Picchu, Peru", fortune: "A mountain trek is in your future. Start training those legs now." },
+                { place: "Bali, Indonesia", fortune: "Your soul needs a beach and a coconut. Unplug and relax." },
+                { place: "Rome, Italy", fortune: "History, pasta, and gelato. Your stomach will thank you." },
+                { place: "Banff, Canada", fortune: "The mountains are blue and the air is crisp. Nature is waiting." },
+                { place: "Cape Town, South Africa", fortune: "Penguins on the beach and wine in the valley. A perfect mix." }
+            ];
+
+            const randomIndex = Math.floor(Math.random() * trips.length);
+            const selected = trips[randomIndex];
+
+            const output = document.getElementById('destination-output');
+            const fortune = document.getElementById('fortune-output');
+            
+            output.innerHTML = "Calculating...";
+            fortune.innerHTML = "";
+
+            setTimeout(() => {
+                output.innerHTML = selected.place;
+                fortune.innerHTML = selected.fortune;
+            }, 500);
+        }
+    </script>
+</div>
+
+        </div><p style="text-align: center; margin-top: 30px;">
+        <a href="#top-anchor" class="back-link">Back to the top</a>
+    </p>
