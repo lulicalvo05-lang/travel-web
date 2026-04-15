@@ -1,0 +1,80 @@
+/* Style 1: Body Customization */
+body {
+    background-image: #423535;
+    background-color: #c2d6ff; /* Deep Space Navy */
+    color: #130505;            /* Light gray text for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style 2: Header Styling */
+header {
+    background-image: linear-gradient(to bottom, #f5fafd, #c2d6ff);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-family: "Georgia", serif;
+    color: #0c1214; /* Electric Blue */
+    font-size: 3rem;
+}
+
+/* Style 3: Navigation Styling */
+nav {
+    background-color: #f5fafd;
+    padding: 15px;
+    text-align: right;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    
+}
+
+/* Style 4: Section Boxes (The 3 required Divs) */
+.section-box {
+    background-color: #f5fafd;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    max-width: 100%;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Deep blue to match your theme */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;       /* Rounded "pill" shape */
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #0077b6; /* Lighter blue when you hover */
+}
